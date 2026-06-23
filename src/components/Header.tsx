@@ -9,17 +9,17 @@ const navigationItems = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-10 border-b border-gray-200 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-20 border-b border-stone-100/10 bg-stone-950/45 backdrop-blur-md">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <Link href="/" className="text-sm font-bold text-gray-950">
+        <Link href="/" className="text-sm font-semibold text-stone-100/80">
           Takagi Rikuto
         </Link>
 
         <nav>
-          <ul className="flex gap-4 text-sm font-medium text-gray-600 sm:gap-6">
+          <ul className="flex gap-4 text-sm font-medium text-stone-200/70 sm:gap-6">
             {navigationItems.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="hover:text-gray-950">
+                <Link href={item.href} className="transition hover:text-amber-100">
                   {item.label}
                 </Link>
               </li>
