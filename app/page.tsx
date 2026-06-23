@@ -18,7 +18,7 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/0 to-transparent" />
 
-        <nav className="absolute bottom-4 left-4 z-10 sm:bottom-6 sm:left-6">
+        <nav className="home-navigation-fade-in absolute bottom-4 left-4 z-10 sm:bottom-6 sm:left-6">
           <div className="inline-flex rounded-2xl border border-stone-100/10 bg-stone-950/25 p-3 shadow-2xl backdrop-blur-[2px]">
             <ul className="flex flex-wrap gap-2">
               {navigationItems.map((item) => (
