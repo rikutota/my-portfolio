@@ -1,10 +1,13 @@
 import { PageTitle } from "@/components/PageTitle";
 import { ProjectCard } from "@/components/ProjectCard";
+import { Header } from "@/components/Header";
 import { myProjects, participatedProjects } from "@/data/works";
 
 export default function WorksPage() {
   return (
-    <div>
+    <>
+      <Header />
+    <div className="mx-auto max-w-5xl px-6">
       <PageTitle
         title="Works"
         description="自分で作成したプロジェクトと、参加したプロジェクトを掲載しています。"
@@ -34,5 +37,6 @@ export default function WorksPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

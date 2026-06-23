@@ -1,45 +1,40 @@
 import Link from "next/link";
-import { PageTitle } from "@/components/PageTitle";
+
+const navigationItems = [
+  { label: "Profile", href: "/profile" },
+  { label: "Works", href: "/works" },
+  { label: "Contact", href: "/contact" },
+];
 
 export default function Home() {
   return (
-    <div>
-      <PageTitle
-        title="Home"
-        description="Next.js, TypeScript, Tailwind CSS を使ってWebアプリを作っています。"
-      />
+    <main className="flex min-h-screen items-center justify-center overflow-hidden bg-black">
+      <div className="relative aspect-[4/3] h-auto max-h-screen w-full max-w-[calc(100vh*4/3)]">
+        <img
+          src="/images/bohemian_room_bg.gif"
+          alt=""
+          className="h-full w-full object-contain"
+        />
 
-      <section className="grid gap-6 pb-16 md:grid-cols-3">
-        <Link
-          href="/profile"
-          className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-        >
-          <h2 className="text-lg font-semibold text-gray-950">Profile</h2>
-          <p className="mt-3 text-sm leading-6 text-gray-600">
-            自己紹介や学習中の技術についてまとめています。
-          </p>
-        </Link>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/0 to-transparent" />
 
-        <Link
-          href="/works"
-          className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-        >
-          <h2 className="text-lg font-semibold text-gray-950">Works</h2>
-          <p className="mt-3 text-sm leading-6 text-gray-600">
-            制作物や参加したプロジェクトを掲載しています。
-          </p>
-        </Link>
-
-        <Link
-          href="/contact"
-          className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-        >
-          <h2 className="text-lg font-semibold text-gray-950">Contact</h2>
-          <p className="mt-3 text-sm leading-6 text-gray-600">
-            連絡先やSNSリンクを掲載しています。
-          </p>
-        </Link>
-      </section>
-    </div>
+        <nav className="absolute bottom-4 left-4 z-10 sm:bottom-6 sm:left-6">
+          <div className="inline-flex rounded-2xl border border-stone-100/10 bg-stone-950/25 p-3 shadow-2xl backdrop-blur-[2px]">
+            <ul className="flex flex-wrap gap-2">
+              {navigationItems.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="block rounded-xl border border-stone-100/15 bg-stone-950/20 px-4 py-2 text-xs font-medium text-stone-100/75 transition hover:border-amber-100/35 hover:bg-amber-100/10 hover:text-amber-50"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </main>
   );
 }
