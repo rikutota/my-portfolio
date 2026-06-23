@@ -6,6 +6,7 @@ export default function ProfilePage() {
   return (
     <>
       <Header />
+
       <div className="mx-auto max-w-5xl px-6">
         <PageTitle
           title="Profile"
@@ -13,20 +14,22 @@ export default function ProfilePage() {
         />
 
         <section className="space-y-10 pb-16">
-          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-950">About me</h2>
-            <p className="mt-4 leading-8 text-gray-600">
+          <div className="rounded-2xl border border-stone-100/10 bg-stone-900/45 p-6 shadow-2xl backdrop-blur-sm">
+            <h2 className="text-2xl font-semibold text-stone-100">About me</h2>
+
+            <p className="mt-4 leading-8 text-stone-300/85">
               {profile.description}
             </p>
           </div>
 
-          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-950">Skills</h2>
+          <div className="rounded-2xl border border-stone-100/10 bg-stone-900/45 p-6 shadow-2xl backdrop-blur-sm">
+            <h2 className="text-2xl font-semibold text-stone-100">Skills</h2>
+
             <div className="mt-6 flex flex-wrap gap-3">
               {profile.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
+                  className="rounded-full border border-amber-100/15 bg-amber-100/10 px-4 py-2 text-sm font-medium text-amber-100/80"
                 >
                   {skill}
                 </span>
