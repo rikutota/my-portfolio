@@ -13,7 +13,7 @@ export default function Home() {
         <img
           src="/images/bohemian_room_bg.gif"
           alt=""
-          className="h-full w-full object-contain"
+          className="home-background-focus h-full w-full object-contain"
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/0 to-transparent" />
