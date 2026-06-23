@@ -19,7 +19,7 @@ export function Header() {
           href="/"
           className="text-xs font-medium uppercase tracking-[0.25em] text-stone-100/70 transition hover:text-amber-100"
         >
-          Portfolio
+          Home
         </Link>
 
         <nav aria-label="Main navigation">
