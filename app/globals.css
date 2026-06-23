@@ -42,3 +42,24 @@ body {
 .home-background-focus {
   animation: home-background-focus 2.8s ease-out forwards;
 }
+
+@keyframes home-navigation-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  60% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-navigation-fade-in {
+  animation: home-navigation-fade-in 2.8s ease-out forwards;
+}
