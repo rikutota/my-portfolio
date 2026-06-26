@@ -1,5 +1,6 @@
 export const profile = {
   name: "Takagi Rikuto",
+  role: "Student",
   description:
     "Next.js, TypeScript, Tailwind CSS を中心に、Webアプリケーション開発を学んでいます。",
 
