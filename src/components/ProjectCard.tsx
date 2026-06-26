@@ -3,7 +3,7 @@ type ProjectCardProps = {
   description: string;
   technologies: string[];
   githubUrl?: string;
-  demoUrl?: string;
+  webUrl?: string;
 };
 
 export function ProjectCard({
@@ -11,9 +11,9 @@ export function ProjectCard({
   description,
   technologies,
   githubUrl,
-  demoUrl,
+  webUrl,
 }: ProjectCardProps) {
-  const hasLinks = githubUrl || demoUrl;
+  const hasLinks = githubUrl || webUrl;
 
   return (
     <article className="group flex h-full flex-col rounded-2xl border border-stone-100/10 bg-stone-900/45 p-6 shadow-2xl backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-amber-100/25 hover:bg-stone-900/60">
@@ -51,14 +51,14 @@ export function ProjectCard({
             </a>
           )}
 
-          {demoUrl && (
+          {webUrl && (
             <a
-              href={demoUrl}
+              href={webUrl}
               target="_blank"
               rel="noreferrer"
               className="text-stone-200/75 transition hover:text-amber-100 hover:underline"
             >
-              Demo
+              詳細
             </a>
           )}
         </div>

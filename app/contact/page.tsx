@@ -38,14 +38,6 @@ export default function ContactPage() {
                   GitHub
                 </a>
 
-                <a
-                  href={profile.x}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-full border border-stone-100/15 bg-stone-950/20 px-5 py-3 text-sm font-semibold text-stone-100/75 transition hover:bg-stone-100/10 hover:text-stone-50"
-                >
-                  X
-                </a>
               </div>
             </div>
           </Reveal>
