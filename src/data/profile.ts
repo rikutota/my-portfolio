@@ -2,7 +2,7 @@ export const profile = {
   name: "Takagi Rikuto",
   role: "Student",
   description:
-    "Next.js, TypeScript, Tailwind CSS を中心に、Webアプリケーション開発を学んでいます。",
+    "Nekonataというモバイルアプリ制作チームで活動しております。主にflutterやnext.jsを用いてアプリケーションの作成を学んでいます。",
 
   birthplace: "青森県出身",
   birthday: "2002年1月18日生まれ",
