@@ -13,6 +13,12 @@ export const myProjects = [
     technologies: ["javascript", "firestore database ", "firebase Authentication", "firebase hosting"],
     webUrl: "https://suu-memoapp.web.app",
   },
+    {
+    title: "Notive (制作中)",
+    description:
+      "関連するメモを横に広げながら，チームで同時に書き，知識としてつなげられるMarkdownメモアプリです．",
+    technologies: ["React", "typescript", "vite", "supabase", "Yjs", "codex"],
+  },
 ];
 
 
